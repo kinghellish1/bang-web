@@ -1,0 +1,38 @@
+<!-- build configuration -->
+<project name="howdy" default="all" basedir=".">
+
+  <!-- define various build properties -->
+  <property name="app.name" value="bang"/>
+
+  <import file="projects/tools/etc/build-support.xml"/>
+
+  <!-- prepares the application directories -->
+  <target name="prepare" depends="copydistprops">
+  </target>
+
+  <!-- a target for rebuilding everything -->
+  <target name="all" depends="clean,prepare"/>
+
+  <!-- builds the distribution jar files -->
+  <target name="dist" depends="prepare">
+  </target>
+
+  <!-- rebuilds all subprojects and the whole top-level distribution -->
+  <target name="distall" depends="prepare,dist">
+  </target>
+
+  <!-- rebuilds everything and extra bits for packaging -->
+  <target name="distpkg" depends="distall">
+  </target>
+
+  <!-- cleans out the application and all subprojects -->
+  <target name="cleanall" depends="clean"/>
+
+  <!-- fully cleans out the application and all subprojects -->
+  <target name="distcleanall" depends="distclean"/>
+
+  <!-- prepare ${destroot} for all the packages being built -->
+  <target name="preppkg">
+    <antcall target="prepare-pages"/>
+  </target>
+</project>
