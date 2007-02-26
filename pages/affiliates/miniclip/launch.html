@@ -7,34 +7,14 @@
         @import "css/launch.css";
     </style>
 
-<!--#include file="header_bot.inc"-->
+<!--#include virtual="../header_bot.inc"-->
   
   <div id="launchwin">
     <!--#set var="affiliate" value="miniclip_b"-->
     <!--#include virtual="/incl/launch_open.html"-->
-    <div id="needjava">
-      <div id="needtitle">Java Plugin Required to Play Bang! Howdy</div>
-      <p>To install the Java plugin, please click on the yellow bar on top of
-         your browser.  Here are some examples:</p>
-      <img src="../images/msg_javapic.gif"/>
-      <p>If you do not see the bar, the plug-in is available at the
-         <a href="http://www.java.com">Java website.</a></p>
-      <p>If you don't want to install the Java plugin, you can download Bang!
-         Howdy and have it always accessible from your desktop.</p>
-      <p>Click <a href="download.html">HERE</a> to download Bang! Howdy.</p>
-    </div>
+    <!--#include virtual="/incl/needjava.html"-->
     <!--#include virtual="/incl/launch_close.html"-->
   </div>
+  <!--#include virtual="/incl/dlinstead.html"-->
 
-  <div id="justamin"><!--Bang Howdy will launch in just a minute--></div>
-  
-  <div id="dloption">
-      <!--Instead of launching from your browser, you can 
-      download Bang! Howdy and run it from your desktop. r-->
-  </div>
-  
-  <div id="click">
-      <a href="download.html" id="herelink"><i>HERE</i></a>
-  </div>
-
-<!--#include file="footer.inc"-->
+<!--#include virtual="../footer.inc"-->
