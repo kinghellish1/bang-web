@@ -5,11 +5,11 @@
       <td align="center"><a href="http://www.banghowdy.com/screenshots/" onclick="this.target='_blank';" >
           <img src="/affiliates/images/589/screenshot_1.jpg" alt="Round 1 : Land Grab"/></a></td>
       <td align="center"><a href="http://www.banghowdy.com/screenshots/" onclick="this.target='_blank';" >
-          <img src="/affiliates/images/589/images/screenshot_2.jpg" alt="Frontier Town Screenshot"/></a></td>
+          <img src="/affiliates/images/589/screenshot_2.jpg" alt="Frontier Town Screenshot"/></a></td>
       <td align="center"><a href="http://www.banghowdy.com/screenshots/" onclick="this.target='_blank';" >
-          <img src="/affiliates/images/589/images/screenshot_3.jpg" alt="ITP Screenshot"/></a></td>
+          <img src="/affiliates/images/589/screenshot_3.jpg" alt="ITP Screenshot"/></a></td>
       <td align="center"><a href="http://www.banghowdy.com/screenshots/" onclick="this.target='_blank';" >
-          <img src="/affiliates/images/589/images/screenshot_4.jpg" alt="General Store"/></a></td>
+          <img src="/affiliates/images/589/screenshot_4.jpg" alt="General Store"/></a></td>
       </tr>
       </table>
     </div>
