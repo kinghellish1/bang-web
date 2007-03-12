@@ -16,7 +16,7 @@ img {
 #content {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 80px;
   width: 600px;
   height: 400px;
   overflow: hidden;
