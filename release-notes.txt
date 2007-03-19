@@ -1,0 +1,7 @@
+Bang! Howdy WWW Release Notes
+
+Please record any changes you make to trunk in this file. This way, when we come to release the next version we'll know what to expect.
+
+Changes since 3/19/2007
+_________________
+* Removed Google Analytics
