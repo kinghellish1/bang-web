@@ -9,7 +9,7 @@
     Architecture    all
     Description Web pages for rumbling in the Wild West.
 
-    # bang-pages depends on the installers and the blawg
+    # bang-pages depends on the blawg
     Depends     bang-blog-pages
 
     # Maintainer Scripts
