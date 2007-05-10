@@ -18,4 +18,13 @@
     # PostInstall     @SCRIPTPATH@/pages-postinst
     # PreUninstall    path/to/preuninstall/script
     # PostUninstall   @SCRIPTPATH@/pages-postrm
+
+    # let members of the "bang" group edit the status page
+    # XXX this is a kludgy workaround and should be addressed later.
+    <Permissions>
+        Path        @PREFIX@/pages/status.html
+        # XXX hard code the bang group. this is unfortunate as well.
+        Group       bang
+        Recursive   no
+    </Permissions>
 </Package>
