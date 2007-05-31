@@ -41,6 +41,13 @@
 
   <!-- prepare ${destroot} for all the packages being built -->
   <target name="preppkg">
-    <antcall target="prepare-pages"/>
+    <antcallback target="prepare-pages" return="pkg.base"/>
+    <antcall target="prepare-pages-extra"/>
+  </target>
+
+  <!-- copy the JREs into place -->
+  <target name="prepare-pages-extra">
+    <copy file="extlibs/jre/java_windows.jar" todir="${pkg.base}/pages/client"/>
+    <copy file="extlibs/jre/java_linux.jar" todir="${pkg.base}/pages/client"/>
   </target>
 </project>
