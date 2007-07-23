@@ -25,6 +25,7 @@
         Path        @PREFIX@/pages/status.html
         # XXX hard code the bang group. this is unfortunate as well.
         Group       bang
+        # TODO: This needs to be made g+w which dweeb does not currently support
         Recursive   no
     </Permissions>
 </Package>
