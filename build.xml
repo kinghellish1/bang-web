@@ -1,6 +1,5 @@
 <!-- build configuration -->
 <project name="howdy" default="all" basedir=".">
-
   <!-- define various build properties -->
   <property name="app.name"   value="bang"/>
   <property name="deploy.dir" value="dist"/>
@@ -12,32 +11,13 @@
     <mkdir dir="${deploy.dir}"/>
   </target>
 
-  <!-- a target for rebuilding everything -->
-  <target name="all" depends="prepare"/>
-
-  <!-- builds the distribution jar files -->
-  <target name="dist" depends="prepare"/>
-
-  <!-- rebuilds all subprojects and the whole top-level distribution -->
-  <target name="distall" depends="prepare,dist"/>
-
   <!-- rebuilds everything and extra bits for packaging -->
-  <target name="distpkg" depends="distall"/>
-
-  <!-- cleans out compiled bits (currently nothing) -->
-  <target name="clean">
-  </target>
-
-  <!-- cleans out the application and all subprojects -->
-  <target name="cleanall" depends="clean"/>
+  <target name="distpkg" depends="prepare"/>
 
   <!-- fully cleans out all build results -->
-  <target name="distclean" depends="clean">
+  <target name="distclean">
     <delete dir="${deploy.dir}"/>
   </target>
-
-  <!-- fully cleans out the application and all subprojects -->
-  <target name="distcleanall" depends="distclean"/>
 
   <!-- prepare ${destroot} for all the packages being built -->
   <target name="preppkg">
