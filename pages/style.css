@@ -93,8 +93,8 @@ li {
     overflow: hidden;
   }
 
-#linkbang a i { 
-    visibility: hidden; 
+#linkbang a i {
+    visibility: hidden;
 }
 
 #linkplay a {
@@ -109,12 +109,12 @@ li {
     overflow: hidden;
   }
 
-#linkplay a i { 
-    visibility: hidden; 
+#linkplay a i {
+    visibility: hidden;
 }
 
-a#btnplay:hover { 
-    background-image: url("/images/header/play.png"); 
+a#btnplay:hover {
+    background-image: url("/images/header/play.png");
     border: none;
 }
 
@@ -130,12 +130,12 @@ a#btnplay:hover {
     overflow: hidden;
   }
 
-#linkscreen a i { 
-    visibility: hidden; 
+#linkscreen a i {
+    visibility: hidden;
 }
 
-a#btnscreen:hover { 
-    background-image: url("/images/header/screen.png"); 
+a#btnscreen:hover {
+    background-image: url("/images/header/screen.png");
     border: none;
 }
 
@@ -151,12 +151,12 @@ a#btnscreen:hover {
     overflow: hidden;
   }
 
-#linkforum a i { 
-    visibility: hidden; 
+#linkforum a i {
+    visibility: hidden;
 }
 
-a#btnforum:hover { 
-    background-image: url("/images/header/forum.png"); 
+a#btnforum:hover {
+    background-image: url("/images/header/forum.png");
     border: none;
 }
 
@@ -172,16 +172,16 @@ a#btnforum:hover {
     overflow: hidden;
   }
 
-#linkaccount a i { 
-    visibility: hidden; 
+#linkaccount a i {
+    visibility: hidden;
 }
 
-a#btnaccount:hover { 
-    background-image: url("/images/header/account.png"); 
+a#btnaccount:hover {
+    background-image: url("/images/header/account.png");
     border: none;
 }
 
-#linknews a {
+#linksupport a {
     position: absolute;
     width: 39px;
     height: 16px;
@@ -193,12 +193,12 @@ a#btnaccount:hover {
     overflow: hidden;
   }
 
-#linknews a i { 
-    visibility: hidden; 
+#linksupport a i {
+    visibility: hidden;
 }
 
-a#btnnews:hover { 
-    background-image: url("/images/header/news.png"); 
+a#btnsupport:hover {
+    background-image: url("/images/header/help.png");
     border: none;
 }
 
@@ -214,8 +214,8 @@ a#btnnews:hover {
     overflow: hidden;
   }
 
-#linkthreerings a i { 
-    visibility: hidden; 
+#linkthreerings a i {
+    visibility: hidden;
 }
 
 /* -------------------------------------------------
@@ -258,8 +258,8 @@ a#btnnews:hover {
     overflow: hidden;
   }
 
-#linklogo a i { 
-    visibility: hidden; 
+#linklogo a i {
+    visibility: hidden;
 }
 
 #Footer {
@@ -273,7 +273,7 @@ a#btnnews:hover {
 
 
 /* -------------------------------------------------
-   For register/register.wm 
+   For register/register.wm
 ------------------------------------------------- */
 h3 {
    margin-bottom: 0px

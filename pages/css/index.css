@@ -26,15 +26,15 @@
   	padding: 0px;
   	text-decoration: none;
   	overflow: hidden;
-  	
+
   }
 
-#linkplayB a i { 
-	visibility: hidden; 
+#linkplayB a i {
+	visibility: hidden;
 }
 
-a#btnplayB:hover { 
-	background-image: url("/images/index/playnow.png"); 
+a#btnplayB:hover {
+	background-image: url("/images/index/playnow.png");
 	border: none;
 }
 
@@ -50,34 +50,34 @@ a#btnplayB:hover {
   	overflow: hidden;
   }
 
-#linkdl a i { 
-	visibility: hidden; 
+#linkdl a i {
+	visibility: hidden;
 }
 
-a#btndl:hover { 
-	background-image: url("/images/index/download.png"); 
+a#btndl:hover {
+	background-image: url("/images/index/download.png");
 	border: none;
 }
 
-#linkblog a {
+#linkhelp a {
   	position: absolute;
- 	width: 131px;
+ 	width: 69px;
   	height: 24px;
-  	top: 469px;
-  	left: 214px;
+  	top: 468px;
+  	left: 247px;
   	margin: 0px;
   	padding: 0px;
-  	text-decoration: none; 
+  	text-decoration: none;
   	overflow: hidden;
-  	
+
   }
 
-#linkblog a i { 
-	visibility: hidden; 
+#linkhelp a i {
+	visibility: hidden;
 }
 
-a#btnblog:hover { 
-	background-image: url("/images/index/blog.png"); 
+a#btnhelp:hover {
+	background-image: url("/images/index/help.png");
 	border: none;
 }
 
@@ -93,12 +93,12 @@ a#btnblog:hover {
   	overflow: hidden;
   }
 
-#linkfrontier a i { 
-	visibility: hidden; 
+#linkfrontier a i {
+	visibility: hidden;
 }
 
-a#btnfrontier:hover { 
-	background-image: url("/images/index/frontier.png"); 
+a#btnfrontier:hover {
+	background-image: url("/images/index/frontier.png");
 	border: none;
 }
 
@@ -114,11 +114,11 @@ a#btnfrontier:hover {
   	overflow: hidden;
   }
 
-#linkitp a i { 
-	visibility: hidden; 
+#linkitp a i {
+	visibility: hidden;
 }
 
-a#btnitp:hover { 
-	background-image: url("/images/index/itp.png"); 
+a#btnitp:hover {
+	background-image: url("/images/index/itp.png");
 	border: none;
 }
