@@ -17,12 +17,12 @@ td {
   USER PAGE (index.html)
 ---------------------------------------------------- */
 
-.dialogBox {
+.uDialogBox {
   border: none;
   background: none;
 }
 
-.dialogBox .Caption {
+.uDialogBox .Caption {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -32,84 +32,84 @@ td {
   white-space: nowrap;
 }
 
-.dialogBox .CaptionLeft {
+.uDialogBox .CaptionLeft {
   width: 30px; height: 46px;
   background: url(/images/support/scroll_left.png);
 }
-.dialogBox .CaptionCenter {
+.uDialogBox .CaptionCenter {
   height: 46px;
   background: url(/images/support/scroll_center.png);
 }
-.dialogBox .CaptionRight {
+.uDialogBox .CaptionRight {
   width: 30px; height: 46px;
   background: url(/images/support/scroll_right.png);
 }
 
-.dialogBox .Content { 
+.uDialogBox .Content {
   background: url(/images/support/center.png);
 }
-.dialogBox .TopLeft { 
-  width: 23px; height: 23px; 
+.uDialogBox .TopLeft {
+  width: 23px; height: 23px;
   background: url(/images/support/top_left.png);
 }
-.dialogBox .Top {
+.uDialogBox .Top {
    width: 23px; height: 23px;
    background: url(/images/support/top.png);
 }
-.dialogBox .TopRight {
+.uDialogBox .TopRight {
    width: 23px; height: 23px;
    background: url(/images/support/top_right.png);
 }
-.dialogBox .Left {
+.uDialogBox .Left {
   width: 23px; height: 23px;
   background: url(/images/support/left.png);
 }
-.dialogBox .Right {
+.uDialogBox .Right {
   width: 23px; height: 23px;
   background: url(/images/support/right.png);
 }
-.dialogBox .BottomLeft {
+.uDialogBox .BottomLeft {
   width: 23px; height: 23px;
   background: url(/images/support/bottom_left.png);
 }
-.dialogBox .Bottom {
+.uDialogBox .Bottom {
   width: 23px; height: 23px;
   background: url(/images/support/bottom.png);
 }
-.dialogBox .BottomRight {
+.uDialogBox .BottomRight {
   width: 23px; height: 23px;
   background: url(/images/support/bottom_right.png);
 }
 
-.userContents {
+.uUserContents {
   width: 780px;
 }
 
-.loginPanel {
+.uLoginPanel {
   text-align: right;
   padding: 0px;
   margin: 0px;
   border: none;
 }
 
-.faqTitle {
+.uFaqTitle {
   font-size: 24px;
 }
 
-.faqCategory {
+.uFaqCategory {
 }
 
-.faqAnswer {
+.uFaqAnswer {
   width: 600px;
   text-align: left;
   padding: 5px;
 }
 
-.updateEmailPopup {
+.uUpdateEmailPopup {
   width: 450px;
 }
 
-.petitionPanel {
+.uPetitionPanel {
   border: none;
   border-top: 1px solid;
 }
@@ -118,11 +118,11 @@ td {
   ADMIN PAGE (admin.html)
 ---------------------------------------------------- */
 
-.eventsPanel {
+.uEventsPanel {
   width: 780px;
 }
 
-.eventsTable {
+.uEventsTable {
   width: 100%;
 }
 
@@ -130,6 +130,6 @@ td {
   SHARED (index.html and admin.html)
 ---------------------------------------------------- */
 
-.messagePanel {
+.uMessagePanel {
   background: #ECE0B8;
 }
