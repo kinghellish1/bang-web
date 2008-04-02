@@ -1,5 +1,5 @@
 <!-- build configuration -->
-<project name="howdy" default="dist" basedir=".">
+<project name="howdy" basedir=".">
 
   <!-- define various build properties -->
   <property name="deploy.dir" value="dist"/>
