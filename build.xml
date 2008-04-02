@@ -1,26 +1,64 @@
 <!-- build configuration -->
-<project name="howdy" default="all" basedir=".">
+<project name="howdy" default="dist" basedir=".">
+
   <!-- define various build properties -->
-  <property name="app.name"   value="bang"/>
   <property name="deploy.dir" value="dist"/>
 
+  <!-- for annotating packages. -->
+  <property name="howdy.maintainer.name" value="Three Rings Design"/>
+  <property name="howdy.maintainer.email" value="bang-dev@threerings.net"/>
+
   <import file="build/etc/build-support.xml"/>
-
-  <!-- prepares the application directories -->
-  <target name="prepare">
-    <mkdir dir="${deploy.dir}"/>
-  </target>
-
-  <!-- rebuilds everything and extra bits for packaging -->
-  <target name="distpkg" depends="prepare"/>
 
   <!-- fully cleans out all build results -->
   <target name="distclean">
     <delete dir="${deploy.dir}"/>
   </target>
 
-  <!-- prepare ${destroot} for all the packages being built -->
-  <target name="preppkg">
-    <antcall target="prepare-pages"/>
+  <!-- package the web content -->
+  <target name="package">
+    <mkdir dir="${deploy.dir}"/>
+    <propertycopy name="package.output" from="ooo.deprecated.package.deploy"/>
+    <property name="pkgroot.root" value="${deploy.dir}/packages"/>
+    <mkdir dir="${pkgroot.root}"/>
+
+    <tstamp>
+      <format property="version" pattern="yyyyMMddHHmmss"/>
+    </tstamp>
+
+    <var name="pkgroot.howdy" value="${pkgroot.root}/bang-pages"/>
+    <var name="approot.howdy" value="${pkgroot.howdy}/${ooo.prefix}/bang"/>
+    <mkdir dir="${approot.howdy}"/>
+
+    <copy todir="${approot.howdy}/pages">
+      <fileset dir="pages">
+        <exclude name="**/*.in"/>
+        <exclude name="source/**"/>
+        <exclude name="**/source/**"/>
+      </fileset>
+    </copy>
+
+    <dpkg output="${package.output}" prefix="${ooo.prefix}/bang" distribution="${ooo.distribution}">
+      <package destroot="${pkgroot.howdy}">
+        <info>
+          <name>bang-pages</name>
+          <version>${version}</version>
+          <arch>${ooo.architecture}</arch>
+          <description>The Bang Howdy web pages.</description>
+          <maintainer>
+            <name>${howdy.maintainer.name}</name>
+            <email>${howdy.maintainer.email}</email>
+          </maintainer>
+        </info>
+        <permissions>
+          <permission user="root" group="bang" mode="664" recursive="false">
+            <path>pages/status.html</path>
+          </permission> 
+        </permissions>
+        <dependencies>
+          <require package="bang-blog-pages"/>
+        </dependencies>
+      </package>
+    </dpkg>
   </target>
 </project>
