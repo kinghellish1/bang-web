@@ -1,0 +1,24 @@
+<!--#include file="header_top.inc"-->
+
+    <title>Bang! Howdy: Launch</title>
+    <style type="text/css" title="currentStyle" media="all">
+        @import "/affiliates/css/589/589.css";
+        @import "/affiliates/css/589/sidebar.css";
+        @import "/affiliates/css/589/launch.css";
+    </style>
+
+<!--#include virtual="../header_bot.inc"-->
+  
+  <div id="launchwin">
+    <!--#if expr="$HTTP_COOKIE = /site_refer=([_a-zA-Z0-9]+)/"-->
+      <!--#set var="affiliate" value="$1"-->
+    <!--#else-->
+      <!--#set var="affiliate" value="bang"-->
+    <!--#endif-->
+    <!--#include virtual="/incl/launch_open.html"-->
+    <!--#include virtual="/incl/needjava.html"-->
+    <!--#include virtual="/incl/launch_close.html"-->
+  </div>
+  <!--#include virtual="/incl/dlinstead.html"-->
+
+<!--#include virtual="../footer.inc"-->
