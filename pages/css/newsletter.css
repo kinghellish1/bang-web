@@ -12,17 +12,17 @@
     body {
         background-image: url(/images/parchment.png);
         font-famiy: "Times New Roman", Times, serif;
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 20px;
     }
     
     .content {
         background-color: #FFFFFF;
         width: 570px;
-        border: 1px solid black;
+        border: 1px solid #666666;
         padding: 15px;
-        font-size: 13px;
         color: #000000;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     
     .content a {
@@ -32,7 +32,7 @@
     .browser_link {
         text-align: right;
         color: #636363;
-        font-size: 11px;
+        font-size: 12px;
     }
     
     .date {
@@ -53,18 +53,28 @@
         color: #760507;
         font-family: Georgia, "Times New Roman", serif;
         font-size: 26px;
+        margin: 20px 0;
     }
     
     .feature_section h2 {
         font-size: 32px;            
     }
     
+    .right_image {
+        float: right;
+    }
+    
     .section_link {
         text-align: right;
         font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .footer_bar {
+        margin: 10px 0;
     }
     
     .footer {
         color: #636363;
-        font-size: 11px;
+        font-size: 12px;
     }
