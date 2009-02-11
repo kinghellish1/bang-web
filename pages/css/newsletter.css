@@ -1,0 +1,70 @@
+
+/* -------------------------------------------------
+   NEWSLETTER PAGES (/newsletter/feb2008.html, etc)
+   These styles are independent of the rest of the website, and should not change after sent.
+------------------------------------------------- */
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-image: url(/images/parchment.png);
+        font-famiy: "Times New Roman", Times, serif;
+        font-size: 14px;
+    }
+    
+    .content {
+        background-color: #FFFFFF;
+        width: 570px;
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 13px;
+        color: #000000;
+        margin: 0 auto;
+    }
+    
+    .content a {
+        color: #760507;
+    }
+    
+    .browser_link {
+        text-align: right;
+        color: #636363;
+        font-size: 11px;
+    }
+    
+    .date {
+        color: #760507;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 16px;
+        padding: 5px 0;
+        text-align: right;
+        border-top: 1px solid #DBDBDB;
+    }
+    
+    .feature_section,
+    .news_section {
+        border-top: 1px solid #DBDBDB;
+    }
+    
+    h2 {
+        color: #760507;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 26px;
+    }
+    
+    .feature_section h2 {
+        font-size: 32px;            
+    }
+    
+    .section_link {
+        text-align: right;
+        font-size: 14px;
+    }
+    
+    .footer {
+        color: #636363;
+        font-size: 11px;
+    }
