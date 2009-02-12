@@ -29,10 +29,26 @@
         color: #760507;
     }
     
-    .browser_link {
-        text-align: right;
+    .browser_link,
+    .unsubscribe,
+    .footer {
+        font-famiy: Verdana,Arial,Helvetica,sans-serif;
         color: #636363;
-        font-size: 12px;
+        font-size: 11px;
+    }
+    
+    .browser_link,
+    .unsubscribe {
+        text-align: right;
+    }
+    
+    .unsubscribe {
+        margin-bottom: 10px;
+        margin-top: -20px;
+    }
+    
+    h1 {
+        margin: 0 0 10px 0;
     }
     
     .date {
@@ -62,6 +78,7 @@
     
     .right_image {
         float: right;
+        margin: 0 0 5px 10px;
     }
     
     .section_link {
@@ -72,9 +89,4 @@
     
     .footer_bar {
         margin: 10px 0;
-    }
-    
-    .footer {
-        color: #636363;
-        font-size: 12px;
     }
