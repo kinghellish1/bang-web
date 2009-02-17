@@ -10,18 +10,26 @@
 	margin: 0px;
 	padding:0px;
 	width: 800px;
-	height: 565px;
+	height: 573px;
 }
 
 /* -------------------------------------------------
    LINKS
 ------------------------------------------------- */
+#video {
+    position: absolute;
+    width: 381px;
+    height: 308px;
+    top: 27px;
+    left: 395px;
+}
+
 #linkplayB a {
   	position: absolute;
  	width: 225px;
   	height: 77px;
-  	top: 284px;
-  	left: 119px;
+  	top: 230px;
+  	left: 94px;
   	margin: 0px;
   	padding: 0px;
   	text-decoration: none;
@@ -42,8 +50,8 @@ a#btnplayB:hover {
   	position: absolute;
  	width: 84px;
   	height: 17px;
-  	top: 377px;
-  	left: 151px;
+  	top: 307px;
+  	left: 122px;
   	margin: 0px;
   	padding: 0px;
   	text-decoration: none;
@@ -63,8 +71,8 @@ a#btndl:hover {
   	position: absolute;
  	width: 218px;
   	height: 167px;
-  	top: 58px;
-  	left: 553px;
+  	top: 383px;
+  	left: 38px;
   	margin: 0px;
   	padding: 0px;
   	text-decoration: none;
@@ -84,8 +92,8 @@ a#btnfrontier:hover {
   	position: absolute;
  	width: 218px;
   	height: 167px;
-  	top: 237px;
-  	left: 553px;
+  	top: 383px;
+  	left: 555px;
   	margin: 0px;
   	padding: 0px;
   	text-decoration: none;

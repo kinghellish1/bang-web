@@ -15,6 +15,10 @@
         font-size: 16px;
     }
     
+    a img {
+        border: none;
+    }
+    
     .content {
         background-color: #FFFFFF;
         width: 570px;
@@ -63,13 +67,14 @@
     .news_section {
         border-top: 1px solid #DBDBDB;
         margin-bottom: 20px;
+        clear: both;
     }
     
     h2 {
         color: #760507;
         font-family: Georgia, "Times New Roman", serif;
         font-size: 26px;
-        margin: 20px 0;
+        margin: 10px 0 20px 0;
     }
     
     p {
