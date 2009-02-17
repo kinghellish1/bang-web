@@ -3,7 +3,7 @@
 ------------------------------------------------- */
 
 #Index {
-    background-image: url("/images/index/index_bkg.png");
+    background-image: url("/images/index/index_bg.jpg");
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -18,8 +18,8 @@
 ------------------------------------------------- */
 #linkplayB a {
   	position: absolute;
- 	width: 275px;
-  	height: 89px;
+ 	width: 225px;
+  	height: 77px;
   	top: 284px;
   	left: 119px;
   	margin: 0px;
@@ -40,8 +40,8 @@ a#btnplayB:hover {
 
 #linkdl a {
   	position: absolute;
- 	width: 107px;
-  	height: 23px;
+ 	width: 84px;
+  	height: 17px;
   	top: 377px;
   	left: 151px;
   	margin: 0px;
@@ -59,32 +59,10 @@ a#btndl:hover {
 	border: none;
 }
 
-#linkhelp a {
-  	position: absolute;
- 	width: 69px;
-  	height: 24px;
-  	top: 468px;
-  	left: 247px;
-  	margin: 0px;
-  	padding: 0px;
-  	text-decoration: none;
-  	overflow: hidden;
-
-  }
-
-#linkhelp a i {
-	visibility: hidden;
-}
-
-a#btnhelp:hover {
-	background-image: url("/images/index/help.png");
-	border: none;
-}
-
 #linkfrontier a {
   	position: absolute;
- 	width: 196px;
-  	height: 149px;
+ 	width: 218px;
+  	height: 167px;
   	top: 58px;
   	left: 553px;
   	margin: 0px;
@@ -104,8 +82,8 @@ a#btnfrontier:hover {
 
 #linkitp a {
   	position: absolute;
- 	width: 196px;
-  	height: 152px;
+ 	width: 218px;
+  	height: 167px;
   	top: 237px;
   	left: 553px;
   	margin: 0px;
