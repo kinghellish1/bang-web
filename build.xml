@@ -18,7 +18,6 @@
   <!-- package the web content -->
   <target name="package">
     <mkdir dir="${deploy.dir}"/>
-    <propertycopy name="package.output" from="ooo.deprecated.package.deploy"/>
     <property name="pkgroot.root" value="${deploy.dir}/packages"/>
     <mkdir dir="${pkgroot.root}"/>
 
@@ -27,7 +26,7 @@
     </tstamp>
 
     <var name="pkgroot.howdy" value="${pkgroot.root}/bang-pages"/>
-    <var name="approot.howdy" value="${pkgroot.howdy}/${ooo.prefix}/bang"/>
+    <var name="approot.howdy" value="${pkgroot.howdy}/export/bang"/>
     <mkdir dir="${approot.howdy}"/>
 
     <copy todir="${approot.howdy}/pages">
@@ -38,12 +37,12 @@
       </fileset>
     </copy>
 
-    <dpkg output="${package.output}" prefix="${ooo.prefix}/bang" distribution="${ooo.distribution}">
+    <dpkg output="${pkgroot.root}" prefix="export/bang" distribution="local">
       <package destroot="${pkgroot.howdy}">
         <info>
           <name>bang-pages</name>
           <version>${version}</version>
-          <arch>${ooo.architecture}</arch>
+          <arch>all</arch>
           <description>The Bang Howdy web pages.</description>
           <maintainer>
             <name>${howdy.maintainer.name}</name>
@@ -53,11 +52,8 @@
         <permissions>
           <permission user="root" group="bang" mode="664" recursive="false">
             <path>pages/status.html</path>
-          </permission> 
+          </permission>
         </permissions>
-        <dependencies>
-          <require package="bang-blog-pages"/>
-        </dependencies>
       </package>
     </dpkg>
   </target>
