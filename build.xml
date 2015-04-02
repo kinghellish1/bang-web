@@ -34,6 +34,7 @@
         <exclude name="**/*.in"/>
         <exclude name="source/**"/>
         <exclude name="**/source/**"/>
+        <exclude name="press/**"/>
       </fileset>
     </copy>
 
